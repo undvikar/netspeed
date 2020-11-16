@@ -1,7 +1,7 @@
 # netspeed status bar module, refreshed by dwmblocks
 CC=gcc 
-BINPATH=/home/dominik/.local/bin
-CACHE=/home/dominik/.cache/netspeed
+BINPATH=/usr/bin
+CACHE=/tmp/netspeed
 netspeed: netspeed.c
 	$(CC) -o netspeed netspeed.c
 
