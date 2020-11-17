@@ -7,8 +7,8 @@
 #include <stdarg.h>
 
 #define INTERFACES "/proc/net/dev"
-#define RECFILE "/tmp/netspeed/received"
-#define TRANSFILE "/tmp/netspeed/transmitted"
+#define RECFILE "/var/lib/netspeed/received"
+#define TRANSFILE "/var/lib/netspeed/transmitted"
 
 void
 get_new_total (unsigned long long int *received, unsigned long long int *transmitted){

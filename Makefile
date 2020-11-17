@@ -1,7 +1,7 @@
 # netspeed status bar module, refreshed by dwmblocks
 CC=gcc 
 BINPATH=/usr/bin
-CACHE=/tmp/netspeed
+CACHE=/var/lib/netspeed
 netspeed: netspeed.c
 	$(CC) -o netspeed netspeed.c
 
@@ -12,5 +12,8 @@ install:
 	mkdir -p $(CACHE)
 	touch $(CACHE)/received
 	touch $(CACHE)/transmitted
+	chmod 666 $(CACHE)/received $(CACHE)/transmitted
+	echo "0\n" > $(CACHE)/received
+	echo "0\n" > $(CACHE)/transmitted
 	cp -f netspeed $(BINPATH)
 	chmod 755 $(BINPATH)/netspeed
