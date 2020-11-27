@@ -80,7 +80,7 @@ main(){
     fprintf(rec, "%llu\n", received);
     fprintf(transm, "%llu\n", transmitted);
 
-    printf("DOWN: %s UP: %s \n", downspeedstr, upspeedstr);
+    printf(" %s  %s \n", downspeedstr, upspeedstr);
     fclose(rec);
     fclose(transm);
 }
