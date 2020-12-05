@@ -53,9 +53,6 @@ calculate_speed(char *speedstr, unsigned long long int *newval, unsigned long lo
     }
 }
 
-
-
-
 int
 main(){
     char downspeedstr[15], upspeedstr[15];
