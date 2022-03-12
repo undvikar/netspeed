@@ -2,8 +2,10 @@
 CC=gcc 
 BINPATH=/usr/bin
 CACHE=/var/lib/netspeed
+all: netspeed
+
 netspeed: netspeed.c
-	$(CC) -o netspeed netspeed.c
+	$(CC) -Wall -o netspeed netspeed.c
 
 clean:
 	rm -f netspeed
